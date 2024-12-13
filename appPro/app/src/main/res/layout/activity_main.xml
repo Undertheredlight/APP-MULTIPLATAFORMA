@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="28dp"
+        android:text="¿Cómo ha sido el servicio?"
+        app:layout_constraintBottom_toTopOf="@+id/rG1"
+        app:layout_constraintEnd_toEndOf="@+id/txtTotal"
+        app:layout_constraintStart_toStartOf="@+id/txtTotal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rG1"
+        android:layout_width="177dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/sRedondeo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/rB20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Increíble (20%)" />
+
+        <RadioButton
+            android:id="@+id/rB18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bueno (18%)" />
+
+        <RadioButton
+            android:id="@+id/rB15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normal (15%)" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="57dp"
+        android:text="Calcula"
+        app:layout_constraintBottom_toTopOf="@+id/txtTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sRedondeo" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="205dp"
+        android:text="appPropinas"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+    <Switch
+        android:id="@+id/sRedondeo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Redondeo de propina"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalcular"
+        app:layout_constraintStart_toStartOf="@+id/btnCalcular"
+        app:layout_constraintTop_toBottomOf="@+id/rG1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

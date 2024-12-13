@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnCuadrado"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#23C7B8"
+        android:text="Calcular"
+        android:textSize="24sp"
+        app:iconTint="#00BCD4"
+        app:rippleColor="#EF0303"
+        tools:layout_editor_absoluteX="373dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <EditText
+        android:id="@+id/edtLadoCua"
+        android:layout_width="151dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="valor..."
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="132dp"
+        android:layout_height="40dp"
+        android:lineSpacingExtra="12sp"
+        android:text="CUADRADO"
+        android:textAlignment="center"
+        android:textColor="#100F0F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <EditText
+        android:id="@+id/edtLadoTri"
+        android:layout_width="146dp"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="valor.."
+        android:inputType="text"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <Button
+        android:id="@+id/btnTriangulo"
+        android:layout_width="159dp"
+        android:layout_height="61dp"
+        android:layout_weight="1"
+        android:backgroundTint="#23C7B8"
+        android:text="Calcular"
+        android:textSize="24sp"
+        app:rippleColor="#7C351E"
+        tools:layout_editor_absoluteX="374dp"
+        tools:layout_editor_absoluteY="479dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:lineSpacingExtra="12sp"
+        android:text="TRIANGULO"
+        android:textAlignment="center"
+        android:textColor="#100F0F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:lineSpacingExtra="12sp"
+        android:text="CIRCULO"
+        android:textAlignment="center"
+        android:textColor="#100F0F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="681dp" />
+
+    <EditText
+        android:id="@+id/edtAreaCir"
+        android:layout_width="137dp"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="valor..."
+        android:inputType="text"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="683dp" />
+
+    <Button
+        android:id="@+id/btnCirculo"
+        android:layout_width="163dp"
+        android:layout_height="61dp"
+        android:layout_weight="1"
+        android:backgroundTint="#23C7B8"
+        android:text="Calcular"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="371dp"
+        tools:layout_editor_absoluteY="672dp" />
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="268dp"
+        android:layout_height="83dp"
+        android:layout_weight="1"
+        android:text="App Fórmulas"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="83dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
